@@ -1,0 +1,33 @@
+{
+  "name": "proof_of_concept",
+  "version": "1.0.0",
+  "description": "Proof of concept for the RGR stack (react-graphql-relay)",
+  "scripts": {
+    "start": "babel-node --presets react,es2015 server.js"
+  },
+  "author": "Coder Faction",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^3.1.2",
+    "events": "^1.1.0",
+    "express": "^4.13.4",
+    "express-graphql": "^0.5.1",
+    "flux": "^2.1.1",
+    "graphql": "^0.5.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mongodb": "^2.1.16",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.7.5",
+    "babel-core": "^6.7.6",
+    "babel-eslint": "^6.0.3",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "eslint-plugin-react": "^5.0.1",
+    "webpack": "^1.13.0"
+  }
+}

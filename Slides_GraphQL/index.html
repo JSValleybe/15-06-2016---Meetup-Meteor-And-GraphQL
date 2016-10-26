@@ -1,0 +1,783 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/jsvalley/JSValley-fb.png"></span>
+      <p class="fs-48">Welcome!</p>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/graphql/graphql_logo_tr.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>About me</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>Lecturer at Hogent - Coder at The Coder Faction</li>
+        <li>Full stack JS developer</li>
+        <li>Started teaching JS in 2011</li>
+        <li>Got inspired in 2012</li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section style="text-align: center">
+        <img src="images/jsvalley/google-i-o-2012.jpg">
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>About me</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>Pushed my first mobile website to the web in december 2012</li>
+        <li>PHP Backend (YII) and JS/JQuery front end with</li>
+        <ul>
+          <li>Grunt (Minification, Image Optimazation, Livereload, Linting, ...)
+          <li>Bower</li>
+          <li>Sass</li>
+        </ul>
+        <li>Started using Backbone and Marionnette in 2013 and replaced Yii by Node/Express</li>
+        <li>Build a framework on top of Marionette (and stopped using JQuery) </li>
+        <li>Switched to ReactJS in october 2014 </li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section style="text-align: center">
+        <img src="images/jsvalley/yeoman.jpg">
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Some Projects</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>2014 VULNERABILITY TOOL  </li>
+        <li>Full Stack development </li>
+        <li>Development Stack</li>
+        <ul>
+          <li>NodeJS - ExpressJS - MariaDB</li>
+          <li>BackboneJS - MarionetteJS</li>
+        </ul>
+        <img src="images/graphql/abvv.png" width="600" style="float: right; position: relative; top: -100px">
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Some Projects</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>2014/2015 - Color Management Tool: The Digital One </li>
+        <li>Full Stack development </li>
+        <li>Development Stack</li>
+        <ul>
+          <li>NodeJS - ExpressJS - MariaDB</li>
+          <li>ReactJS</li>
+          <li>Reflux</li>
+        </ul>
+        <img src="images/graphql/CP.png" width="600" style="float: right; position: relative; top: -50px">
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Some Projects</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>2015 - SMART CITY APP: Citie  </li>
+        <li>Freelance assignment for ITP: Node JS Back end development </li>
+        <li>Development Stack</li>
+        <ul>
+          <li>NodeJS - ExpressJS - MariaDB - MongoDB - Redis - RabbitMQ - KeyStone - Harald</li>
+          <li>Testdriven Development with Mocha - Chai</li>
+        </ul>
+        <img src="images/graphql/citi.jpg" width="400" style="float: right; position: relative; top: -80px">
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Some Projects</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>2016 - Commerce platform for cloud services: Cloud In Motion  </li>
+        <li>Front end development </li>
+        <li>Development Stack</li>
+        <ul>
+          <li>PHP - Slim Framework</li>
+          <li>ReactJS</li>
+          <li>Redux</li>
+        </ul>
+        <img src="images/graphql/cloud2.png" width="400" style="float: right;">
+        <img src="images/graphql/cloud1.png" width="400" style="float: right;">
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Some Projects</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>2016 - Social Network: Sharkrank  </li>
+        <li>Full Stack development </li>
+        <li>Development Stack</li>
+        <ul>
+          <li>NodeJS - ExpressJS - Neo4J</li>
+          <li>GraphQL </li>
+          <li>ReactJS</li>
+          <li>Relay</li>
+        </ul>
+        <img src="images/graphql/shark.png" width="600" style="float: right; position: relative; top: -50px">
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Apollo - Reactive GraphQL</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li><a href="http://info.meteor.com/blog/reactive-graphql">January 25 2016: Blog Meteor - Reactive GraphQL</a></li>
+        <li>Meteor’s Reactive GraphQL project is now re-branded as Apollo</li>
+        <li>Apollo Server and Apollo Client</li>
+        <li>Components: GraphQL-JS / Relay / DataLoader</li>
+        <li class=""><a href="http://docs.apollostack.com/">Apollo documentation</a></li>
+        <img src="images/graphql/apollo.png" width="600" style="float: right;position: relative; top: -30px">
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+  	<hgroup>
+  		<h2>Why GraphQL</h2>
+  	</hgroup>
+
+  	<article>
+      <img src="images/graphql/why-graphql.png" width="100%" style="">
+  	</article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Why GraphQL</h2>
+    </hgroup>
+
+    <article>
+      <img src="images/graphql/why-graphql2.png" width="500px" style="display: block; margin: 0 auto;">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Why GraphQL</h2>
+    </hgroup>
+
+    <article>
+      <img src="images/graphql/why-graphql3.png" width="500px" style="display: block; margin: 0 auto;">
+    </article>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/graphql/graphql_logo_tr.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <q>
+        GraphQL is a query language created by Facebook in 2012 which provides a common, declarative interface between the client and the server for data-fetching and manipulations.
+      </q>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>GraphQL</h2>
+    </hgroup>
+    <article>
+
+      <ul class="build fade">
+        <li>JSON without the values</li>
+        <pre class="prettyprint" data-lang="javascript">
+query {
+  links {
+    _id,
+    title,
+    url
+  }
+}
+        </pre>
+        <li>No custom REST endpoints</li>
+        <li>Clients ask exactly what they want</li>
+        <li>One endpoint to rule them all</li>
+        <li>Queries (READ) and mutations (CREATE/UPDATE/DELETE)</li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section style="text-align: center">
+        <img src="images/graphql/result_query.png" width="600" style="">
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>GraphQL Design Considerations</h2>
+    </hgroup>
+    <article>
+
+      <ul class="build fade">
+        <li>Hierarchical</li>
+        <ul>
+          <li>Most product development today involves the creation and manipulation of view hierarchies</li>
+          <li>We think about our data it in terms of a graph of objects and the models we ultimately use in our apps like JSON</li>
+          <li>The query is shaped just like the data it returns</li>
+          <li>Natural way for clients to describe data requirements</li>
+        </ul>
+        <li>Product-centric</li>
+        <ul>
+          <li>Driven by the requirements of views and the front‐end engineers that write them</li>
+          <li>GraphQL starts with their way of thinking the requirements and build the language and runtime necessary to enable that</li>
+        </ul>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>GraphQL Design Considerations</h2>
+    </hgroup>
+    <article>
+
+      <ul class="build fade">
+        <li>Strong-Typing </li>
+        <ul>
+          <li>Every GraphQL server defines an application‐specific type system</li>
+          <li>Given a query, tools can ensure that the query is both syntactically correct and valid within the GraphQL type system before execution</li>
+          <li>At the development time, and the server can make certain guarantees about the shape and nature of the response.</li>
+        </ul>
+        <li>Client-specified queries </li>
+        <ul>
+          <li>It is the client that is responsible for specifying exactly how it will consume those published capabilities.</li>
+          <li>These queries are specified at field‐level granularity</li>
+        </ul>
+        <li>Transport independant</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>GraphiQL</h2>
+    </hgroup>
+    <article>
+      <img src="images/graphql/graphiql.png" width="800" style="">
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Let's build a GraphQL endpoint</h2>
+    </hgroup>
+    <article>
+
+        <pre class="prettyprint" data-lang="javascript">
+let app = express(); // Start an Express Application
+
+app.use(express.static('public')); // Define static resources
+
+let db; // Connect with MongoDB
+MongoClient.connect('mongodb://localhost/rgrDb', (err, database) => {
+  if (err) throw err;
+  db = database;
+  <b>app.use('/graphql', GraphQLHTTP({   // Define a graphQL endpoint
+    schema: schema(db),
+    graphiql: true, // Activate graphiql dev tool
+  }));</b>
+  app.listen(9000, () => console.log('listening on port 9000'));   // Start Server
+});
+  </pre>
+    </article>
+    <aside class="note">
+      <section style="text-align: left">
+        <pre class="prettyprint" data-lang="javascript">
+import express from 'express';
+import schema from './data/schema';
+import GraphQLHTTP from 'express-graphql';
+import { MongoClient } from 'mongodb';
+        </pre>
+      </section>
+    </aside>
+  </slide>
+
+<slide>
+  <hgroup>
+    <h2>Define a GraphQL schema</h2>
+  </hgroup>
+  <article>
+
+      <pre class="prettyprint" data-lang="javascript">
+          let linkType = new GraphQLObjectType({
+            name: 'Link',
+            fields: () => ({
+              _id: { type: GraphQLString },
+              title: { type: GraphQLString },
+              url: { type: GraphQLString }
+            })
+          })
+
+          let schema = new GraphQLSchema({
+            query: new GraphQLObjectType({
+              name: 'Query',
+              fields: () => ({
+                links: {
+                  type: new GraphQLList(linkType),
+                  resolve: () => db.collection('links').find({}).toArray()
+                }
+              })
+            }),
+          });
+</pre>
+  </article>
+  <aside class="note">
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+        import {
+          GraphQLSchema,
+          GraphQLObjectType,
+          GraphQLInt,
+          GraphQLString,
+          GraphQLList,
+        } from 'graphql';
+      </pre>
+    </section>
+  </aside>
+</slide>
+
+
+<slide>
+  <hgroup>
+    <h2>Querying GraphQL</h2>
+  </hgroup>
+  <article>
+      <section style="text-align: left">
+        <pre class="prettyprint" data-lang="javascript">
+{
+  latestPost {
+    title,
+    summary
+  }
+}</pre>
+    </section>
+    Result
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+{
+  "data": {
+    "latestPost": {
+      "title": "New Feature: Tracking Error Status with Kadira",
+      "summary": "Now, we've that functionality."
+    }
+  }
+}</pre>
+  </section>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Nested Queries</h2>
+  </hgroup>
+  <article>
+      <section style="text-align: left">
+        <pre class="prettyprint" data-lang="javascript">
+{
+  posts {
+    title,
+    author {
+      name
+    },
+    summary,
+    comments {
+      content
+    }
+  }
+}</pre>
+    </section>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Arguments in Queries</h2>
+  </hgroup>
+  <article>
+      <section style="text-align: left">
+        <pre class="prettyprint" data-lang="javascript">
+{
+  recentPosts(count: 2) {
+    title,
+    comments(limit: 1) {
+      content
+    }
+  }
+}
+        </pre>
+    </section>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Multiple fields in Queries</h2>
+  </hgroup>
+  <article>
+      <section style="text-align: left">
+        <pre class="prettyprint" data-lang="javascript">
+{
+  latestPost {
+    title
+  },
+
+  authors {
+    name
+  }
+}
+        </pre>
+    </section>
+  </article>
+</slide>
+
+<slide>
+<hgroup>
+  <h2>Invoking Mutations</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+mutation {
+  createAuthor(
+    _id: "john",
+    name: "John Carter",
+    email: "john@coderfcation.com"
+  ) {
+    _id
+    name
+  }
+}
+      </pre>
+  </section>
+</article>
+</slide>
+
+<slide>
+<hgroup>
+  <h2>Mutiple Mutations</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+mutation {
+  joeri: createAuthor(
+    _id: "joeri",
+    name: "Joeri Van Steen"
+    email: "joeri@coderfaction.com"
+  ) {
+    _id
+    name
+  },
+
+  filip: createAuthor(
+    _id: "filip",
+    name: "Filip Maertens"
+    email: "filip@coderfaction.com"
+  ) {
+    _id
+    name
+  }
+}
+      </pre>
+  </section>
+</article>
+</slide>
+
+<slide>
+<hgroup>
+  <h2>Fragments</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+{
+  arunoda: author(_id: "arunoda") {
+    ...authorInfo
+  },
+  pahan: author(_id: "pahan") {
+    ...authorInfo
+  },
+  indi: author(_id: "indi") {
+    ...authorInfo
+  }
+}
+
+fragment authorInfo on Author {
+  _id,
+  name,
+  twitterHandle
+}
+      </pre>
+  </section>
+</article>
+</slide>
+
+<slide>
+<hgroup>
+  <h2>Query Variables</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+query getFewPosts($postCount: Int!, $commentCount: Int) {
+  recentPosts(count: $postCount) {
+    title,
+    ...comments
+  }
+}
+
+fragment comments on Post {
+  comments(limit: $commentCount) {
+    content
+  }
+}
+      </pre>
+  </section>
+</article>
+</slide>
+
+
+<slide>
+<hgroup>
+  <h2>Defining A Schema</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+const Schema = new GraphQLSchema({
+  query: Query,
+  mutation: Mutation
+});
+      </pre>
+  </section>
+</article>
+</slide>
+
+<slide>
+<hgroup>
+  <h2>Defining Queries</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+const Post = new GraphQLObjectType({
+  name: "Post",
+  description: "This represent a Post",
+  fields: () => ({
+    _id: {type: new GraphQLNonNull(GraphQLString)},
+    title: {type: new GraphQLNonNull(GraphQLString)},
+    content: {type: GraphQLString}
+  })
+});
+      </pre>
+  </section>
+</article>
+</slide>
+
+<slide>
+<hgroup>
+  <h2>Defining Queries</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+const Query = new GraphQLObjectType({
+  name: 'BlogSchema',
+  description: "Root of the Blog Schema",
+  fields: () => ({
+    posts: {
+      type: new GraphQLList(Post),
+      resolve: function() {
+        return PostsList;
+      }
+    }
+  })
+});
+      </pre>
+  </section>
+</article>
+</slide>
+
+<slide>
+<hgroup>
+  <h2>Defining Mutation</h2>
+</hgroup>
+<article>
+    <section style="text-align: left">
+      <pre class="prettyprint" data-lang="javascript">
+const Mutation = new GraphQLObjectType({
+  name: "BlogMutations",
+  description: "Mutations of our blog",
+  fields: () => ({
+    createPost: {
+      type: Post,
+      args: {
+        title: {type: new GraphQLNonNull(GraphQLString)},
+        content: {type: new GraphQLNonNull(GraphQLString)}
+      },
+      resolve: function(source, args) {
+        let post = Object.assign({}, args);
+        post._id = `${Date.now()}::${Math.ceil(Math.random() * 9999999)}`; // Generate the _id
+        post.author = "arunoda"; // Assign a user
+        PostsList.push(post); // Add the Post to the data store
+        return post; // Return the new post.
+      }
+    }
+  })
+});
+      </pre>
+  </section>
+</article>
+<aside class="note">
+<section style="text-align: left">
+  <pre class="prettyprint" data-lang="javascript">
+    mutation insertFirstPost {
+      post: createPost(
+        title: "GraphQL is Awesome",
+        content: "Yep, it's purely awesome."
+      ) {
+        _id,
+        title
+      }
+    }
+  </pre>
+</section>
+</aside>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>More on GraphQL</h2>
+  </hgroup>
+  <article class="smaller">
+    <p class="list-o-shiz">
+
+      <ul style="display: inline-block;">
+        <li class=""><a href="http://graphql.org/">GraphQL Website</a></li>
+        <li class=""><a href="http://facebook.github.io/graphql/">GraphQL Spec</a></li>
+        <li class=""><a href="https://github.com/chentsulin/awesome-graphql">Awesome GraphQL</a></li>
+        <li class=""><a href="https://graphql-slack.herokuapp.com/">Slack Help & Support</a></li>
+        <li class=""><a href="https://github.com/graphql/graphql-js/blob/master/src/__tests__/starWarsSchema.js">Facebook Star Wars Example Schema</a></li>
+        <li class=""><a href="https://learngraphql.com">Learn GraphQL</a></li>
+      </ul>
+    </p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Relay</h2>
+  </hgroup>
+  <article>
+    <ul class="build fade">
+    <li>Flux++</li>
+    <li>No separation of views and models</li>
+    <li>Data requirements expressed with GraphQL Fetch and make data available as props Updates (Mutations)</li>
+    <li>Efficiency, consistency, and error handling</li>
+    <ul>
+      <li>Batching</li>
+      <li>Error Handling Retries</li>
+      <li>Optimistic Mutations Rollbacks</li>
+      <li>Pagination</li>
+      <li>Caching</li>
+    </ul>
+    </ul>
+    <img src="images/graphql/rrg.png" width="400" style="float: right;position: relative; top: -150px">
+  </article>
+</slide>
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/jsvalley/logotr.gif"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Thank You!&gt;</h2>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
